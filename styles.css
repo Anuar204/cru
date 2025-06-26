@@ -131,3 +131,136 @@ body {
     font-size: 0.9em;
   }
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+/* ==================== Botón Flotante Chatbot ==================== */
+.chatbot-float {
+  position: fixed;
+  bottom: 95px; /* Encima del botón de WhatsApp */
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0078D4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.2s ease;
+  animation: chatbotBounce 1s ease-in-out;
+}
+
+.chatbot-float:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-float img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ✨ Animación suave al aparecer */
+@keyframes chatbotBounce {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 📱 Responsive: ajustar tamaño en pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .chatbot-float {
+    width: 50px;
+    height: 50px;
+    bottom: 85px;
+  }
+
+  .chatbot-float img {
+    width: 28px;
+    height: 28px;
+  }
+}
+.chatbot-float {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0078D4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.2s ease;
+  animation: chatbotBounce 1s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  position: fixed;
+}
+
+.chatbot-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.chatbot-float:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-label {
+  position: absolute;
+  right: 70px;
+  background-color: #0078D4;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.chatbot-float:hover .chatbot-label {
+  opacity: 1;
+}
+
+/* Solo mostrar en pantallas grandes */
+@media screen and (max-width: 768px) {
+  .chatbot-label {
+    display: none;
+  }
+}
