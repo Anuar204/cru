@@ -37,14 +37,16 @@
       <!-- Historia / misión -->
     </section>
 
-    <section id="contacto">
+  
+
+<section id="contacto">
   <h2>Contáctanos</h2>
   <form action="https://formsubmit.co/kingaczinokodigo@gmail.com" method="POST">
-    <!-- Evita el captcha de FormSubmit -->
+    <!-- Redirección al finalizar -->
+    <input type="hidden" name="_next" value="https://anuar204.github.io/cru/gracias.html">
+    
+    <!-- Opcional: desactivar captcha -->
     <input type="hidden" name="_captcha" value="false">
-
-    <!-- Redirigir luego del envío (opcional) -->
-    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
 
     <input type="text" name="nombre" placeholder="Tu nombre" required />
     <input type="email" name="correo" placeholder="Correo electrónico" required />
