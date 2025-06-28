@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+// Guardar preferencia
+if (localStorage.getItem('theme') === 'dark') {
+  root.classList.add('dark-mode');
+  toggle.checked = true;
+}
+toggle.addEventListener('change', function() {
+  if (this.checked) {
+    root.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    root.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+});
+</script>
+
 <body>
 
   <!-- Header MODERNO inicia aquí -->
@@ -23,6 +45,13 @@
         </ul>
       </nav>
     </div>
+    <div class="theme-switch-wrapper">
+  <label class="theme-switch" for="theme-toggle">
+    <input type="checkbox" id="theme-toggle" />
+    <span class="slider"></span>
+  </label>
+  <span class="theme-label">🌙</span>
+</div>
   </header>
   <!-- Header MODERNO termina aquí -->
 
