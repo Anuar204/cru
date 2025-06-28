@@ -7,34 +7,24 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- Otras secciones de tu sitio aquí -->
-
-<!-- asistente boton  -->
-<a href="https://wa.me/3132056515" class="whatsapp-float" target="_blank" rel="noopener">
-  <img src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp/whatsapp-icon.png" alt="WhatsApp" />
-</a>
-
-<a href="https://www.chatbase.co/chatbot-iframe/eIrzI-2lWZ2UNDvJmKXhr" class="chatbot-float" target="_blank" rel="noopener">
-  <img src="https://img.icons8.com/ios-filled/50/ffffff/chatbot.png" alt="Asistente Virtual" />
-  <span class="chatbot-label">¿Tienes dudas?</span>
-</a>
-
-</body>
-</html>
-
-
 <body>
 
-  <header>
-    <h1 class="marca">Éxodo Digital</h1>
-    <nav>
-      <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#sobre">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Header MODERNO inicia aquí -->
+  <header class="main-header">
+    <div class="container">
+      <h1>Éxodo Digital</h1>
+      <nav>
+        <input type="checkbox" id="menu-toggle"/>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- Header MODERNO termina aquí -->
 
   <main>
     <section id="hero">
@@ -45,70 +35,55 @@
 
     <section id="servicios">
       <h2>Nuestros Servicios</h2>
-      <!-- Detalles a rellenar -->
+      <div class="servicios-grid">
+        <article>
+          <h3>Landing Pages</h3>
+          <p>Páginas rápidas, modernas y centradas en conversión.</p>
+        </article>
+        <article>
+          <h3>Tiendas Online</h3>
+          <p>E-commerce funcional y estético, 100% administrable.</p>
+        </article>
+        <article>
+          <h3>Web Corporativa</h3>
+          <p>Tu marca digital con enfoque profesional y confiable.</p>
+        </article>
+      </div>
     </section>
 
     <section id="sobre">
-      <h2>¿Quiénes somos?</h2>
-      <!-- Historia / misión -->
+      <h2>Sobre Éxodo Digital</h2>
+      <p>Somos un equipo apasionado por el diseño y desarrollo web. Ayudamos a emprendedores y negocios a tener presencia digital con estilo, estrategia y resultados.</p>
     </section>
 
-  
-
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <form action="https://formsubmit.co/kingaczinokodigo@gmail.com" method="POST">
-    <!-- Redirección al finalizar -->
-    <input type="hidden" name="_next" value="https://anuar204.github.io/cru/gracias.html">
-    
-    <!-- Opcional: desactivar captcha -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="email" name="correo" placeholder="Correo electrónico" required />
-    <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</section>
-
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form action="https://formsubmit.co/kingaczinokodigo@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://anuar204.github.io/cru/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Correo electrónico" required />
+        <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Éxodo Digital. Todos los derechos reservados.</p>
+    <p>© 2025 Éxodo Digital Anuar Peñalver. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Botones flotantes -->
+  <a href="https://wa.me/3132056515" class="whatsapp-float" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+  <a href="https://www.chatbase.co/chatbot-iframe/eIrzI-2lWZ2UNDvJmKXhr" class="chatbot-float" target="_blank" rel="noopener">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/chatbot.png" alt="Asistente Virtual" />
+    <span class="chatbot-label">¿Tienes dudas?</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
 </html>
-<section id="servicios">
-  <h2>Nuestros Servicios</h2>
-  <div class="servicios-grid">
-    <article>
-      <h3>Landing Pages</h3>
-      <p>Páginas rápidas, modernas y centradas en conversión.</p>
-    </article>
-    <article>
-      <h3>Tiendas Online</h3>
-      <p>E-commerce funcional y estético, 100% administrable.</p>
-    </article>
-    <article>
-      <h3>Web Corporativa</h3>
-      <p>Tu marca digital con enfoque profesional y confiable.</p>
-    </article>
-  </div>
-</section>
-<section id="sobre">
-  <h2>Sobre Éxodo Digital</h2>
-  <p>Somos un equipo apasionado por el diseño y desarrollo web. Ayudamos a emprendedores y negocios a tener presencia digital con estilo, estrategia y resultados.</p>
-</section>
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <form>
-    <input type="text" placeholder="Tu nombre" required />
-    <input type="email" placeholder="Correo electrónico" required />
-    <textarea rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</section>
 
 
