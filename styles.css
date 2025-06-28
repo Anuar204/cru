@@ -19,41 +19,38 @@ body {
   color: var(--negro);
 }
 #hero {
-  background: linear-gradient(to right, var(--azul-oscuro), var(--cian));
+  /* Fondo azul nocturno con degradado */
+  background: linear-gradient(120deg, #0b1d3a 0%, #23395d 100%);
   color: var(--blanco);
   text-align: center;
   padding: 100px 20px;
   border-radius: 0 0 15px 15px;
+  position: relative;
+  overflow: hidden; /* Para que las estrellitas no sobresalgan */
 }
 
-#hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* Estrellitas con pseudo-elemento */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  /* Patrón de estrellitas usando radial-gradient */
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1.2px, transparent 1.2px),
+    radial-gradient(white 0.8px, transparent 0.8px);
+  background-size: 90px 90px, 140px 140px, 180px 180px;
+  background-position: 
+    10px 20px,
+    50px 80px,
+    120px 40px;
+  opacity: 0.6;
 }
-
-#hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-#hero button {
-  background-color: var(--dorado);
-  color: #000;
-  padding: 12px 24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-#hero button:hover {
-  transform: scale(1.05);
-}
-#servicios {
-  padding: 60px 20px;
-  background-color: var(--blanco);
-  text-align: center;
+#hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .servicios-grid {
