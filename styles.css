@@ -356,3 +356,58 @@ body {
     display: block;
   }
 }
+#servicios {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#servicios h2 {
+  font-size: 2.2em;
+  color: #2a2a2a;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.servicios-grid article {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-grid h3 {
+  font-size: 1.4em;
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.servicios-grid p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  #servicios h2 {
+    font-size: 1.8em;
+  }
+  .servicios-grid {
+    gap: 20px;
+  }
+}
