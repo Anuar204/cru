@@ -17,6 +17,19 @@ body {
   font-family: var(--fuente);
   background-color: var(--blanco);
   color: var(--negro);
+   transition: background-color 0.3s, color 0.3s;
+
+}
+.oscuro {
+  background-color: #121212;
+  color: white;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 #hero {
   /* Fondo azul nocturno con degradado */
